@@ -29,8 +29,8 @@
             // Base alpha layer    
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &out OUT_USB 						&kp J &kp L &kp U    &kp Y &kp SQT
-		&kp A &kp R &kp S &out OUT_BLE &kp G 			        	&kp M &kp N &kp E   &kp I &kp O
+		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L &kp U    &kp Y &kp SQT
+		&kp A &kp R &kp S &kp T &kp G 			        	&kp M &kp N &kp E   &kp I &kp O
 		&mt LCTRL Z &mt LGUI X &mt LALT C &kp D &kp V		&kp K &kp H  &mt RALT CMMA &mt RGUI DOT &mt RCTRL FSLH
           			&mt LSFT ENTER &lt NAV BSPC				&lt NUM SPACE &kp E
 		>;
