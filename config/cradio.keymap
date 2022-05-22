@@ -38,9 +38,9 @@
 
        		num_layer {
 		bindings = <
-		&kp TILDE &kp EXCL &kp PLUS  &kp DLLR &kp AT		&kp K_VOL_UP &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp PIPE
-		&kp FSLH  &kp STAR &kp MINUS &kp EQUAL &kp HASH		&kp K_VOL_DN	&kp NUM_1  &kp NUM_2 &kp NUM_3  &kp NUM_0 
-		&kp GRAVE &kp LT  &kp GT     &kp BSLH	&kp PRCNT	&kp K_PP &kp NUM_7 &kp NUM_8 &kp NUM_9  &kp DOT 
+		&kp TILDE &kp EXCL &kp PLUS  &kp DLLR &kp AT		&kp C_VOL_UP &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp PIPE
+		&kp FSLH  &kp STAR &kp MINUS &kp EQUAL &kp HASH		&kp C_VOL_DN	&kp NUM_1  &kp NUM_2 &kp NUM_3  &kp NUM_0 
+		&kp GRAVE &kp LT  &kp GT     &kp BSLH	&kp PRCNT	&kp C_PP &kp NUM_7 &kp NUM_8 &kp NUM_9  &kp DOT 
 					    &trans  &kp DEL  					&trans &kp NUM_0 
 		>;
 		};
