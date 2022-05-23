@@ -3,7 +3,19 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+/*
+TODOs/ideas:
+1. make keymaps look better in code
+2. add a qwerty layer
+3. add a gaming layer
+4. add a maintainance layer (for reset, ble/usb, etc.)
+5. add a combo for returning to base layer
+6. add a media layer?
+7. custom shift 
+8. alt+tab
+9. gui+num layer/nav layer on key, for tiling window manager navigation
+10. select-line macro
+*/
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -94,7 +106,7 @@
 		bindings = <
 		&kp ESC  &kp PG_UP &kp UP  &kp PG_DN  &kp INS    			&kp RBKT  &pair_bkt &kp COLON &kp SEMI &kp PIPE 
 		&kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END 			&kp RPAR &pair_par  &kp UNDER  &kp SQT   &kp DQT
-		&kp LC(Z)  &kp LG(X) &kp LA(C) &kp PSCRN   &kp TAB    			&kp RBRC &pair_brc &kp CARET &kp PIPE  &kp AMPS
+		&kp LC(Z)  &kp LG(X) &kp LA(C) &kp PSCRN   &kp K_APP    		&kp RBRC &pair_brc &kp CARET &kp PIPE  &kp AMPS
 					  &trans &trans  				&trans  &trans 
 		>;
 		};	
