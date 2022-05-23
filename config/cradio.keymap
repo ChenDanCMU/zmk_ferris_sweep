@@ -34,6 +34,33 @@
             bindings
                 = <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
         };
+	 pair_par: pair_par {
+            label = "pair_par";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+	    wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&kp LPAR &kp RPAR &kp LEFT>;
+        };
+	pair_par: pair_bkt {
+            label = "pair_bkt";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+	    wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&kp LBKT &kp RBKT &kp LEFT>;
+        };
+	pair_brc: pair_brc {
+            label = "pair_brc";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+	    wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                = <&kp LBRC &kp RBRC &kp LEFT>;
+        };
      };
 
     combos {
@@ -66,9 +93,9 @@
 		
 		nav_layer {
 		bindings = <
-		&kp ESC  &kp PG_UP &kp UP  &kp PG_DN  &kp INS    			&kp RBKT  &kp LBKT &kp COLON &kp SEMI &kp PIPE 
-		&kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END 			&kp RPAR &kp LPAR  &kp UNDER  &kp SQT   &kp DQT
-		&kp LC(Z)  &kp LG(X) &kp LA(C) &kp PSCRN   &kp TAB    			&kp RBRC &kp LBRC &kp CARET &kp PIPE  &kp AMPS
+		&kp ESC  &kp PG_UP &kp UP  &kp PG_DN  &kp INS    			&kp RBKT  &pair_bkt &kp COLON &kp SEMI &kp PIPE 
+		&kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END 			&kp RPAR &pair_par  &kp UNDER  &kp SQT   &kp DQT
+		&kp LC(Z)  &kp LG(X) &kp LA(C) &kp PSCRN   &kp TAB    			&kp RBRC &pair_brc &kp CARET &kp PIPE  &kp AMPS
 					  &trans &trans  				&trans  &trans 
 		>;
 		};	
