@@ -43,7 +43,7 @@
             bindings
                 = <&kp LPAR &kp RPAR &kp LEFT>;
         };
-	pair_par: pair_bkt {
+	pair_bkt: pair_bkt {
             label = "pair_bkt";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
