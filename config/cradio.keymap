@@ -39,7 +39,6 @@
     combos {
         compatible = "zmk,combos";
         combo_return {
-            tap-ms = <40>;
             key-positions = <11 13>;
             bindings = <&word_return>;
         };
