@@ -25,7 +25,7 @@
 };
 / { 
     macros {
-        word_return: {
+        word_return: word_return {
             label = "word_return";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -34,6 +34,7 @@
             bindings
                 = <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
         };
+     }
 
     combos {
         compatible = "zmk,combos";
