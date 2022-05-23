@@ -30,7 +30,7 @@
         combo_return {
             timeout-ms = <50>;
             key-positions = <11 13>;
-            bindings = <&macro_tap &kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
+            bindings = <&kp R>, <&kp E>, <&kp T>, <&kp U>, <&kp R>, <&kp N>, <&kp SPACE>;
         };
     };
         keymap {
