@@ -27,8 +27,12 @@
 
     combos {
         compatible = "zmk,combos";
+        combo_return {
+            timeout-ms = <50>;
+            key-positions = <6 8>;
+            bindings = <&macro_tap &kp R &kp E &kp T &kp U &kp R &kp N & kp SPACE>;
+        };
     };
-
         keymap {
                 compatible = "zmk,keymap";
             // Base alpha layer    
