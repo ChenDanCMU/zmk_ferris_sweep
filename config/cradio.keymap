@@ -5,7 +5,6 @@
  */
 /*
 TODOs/ideas:
-1. make keymaps look better in code
 2. add a qwerty layer
 3. add a gaming layer
 4. add a maintainance layer (for reset, ble/usb, etc.)
@@ -86,37 +85,57 @@ TODOs/ideas:
             // Base alpha layer    
        		default_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 						&kp J &kp L &kp U    &kp Y &kp SQT
-		&kp A &kp R &kp S &kp T &kp G 			        	&kp M &kp N &kp E   &kp I &kp O
-		&mt LCTRL Z &mt LGUI X &mt LALT C &kp D &kp V		&kp K &kp H  &mt RALT CMMA &mt RGUI DOT &mt RCTRL FSLH
-          			&mt LSFT ENTER &lt NAV BSPC				&lt NUM SPACE &lt FNC TAB
+	// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+	        &kp Q         &kp W         &kp F         &kp P        &kp B 		   &kp J        &kp L         &kp U         &kp Y       &kp SQT
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+		&kp A         &kp R         &kp S         &kp T        &kp G 		   &kp M        &kp N         &kp E         &kp I        &kp O
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	     &mt LCTRL Z    &mt LGUI X    &mt LALT C      &kp D        &kp V	           &kp K        &kp H     &mt RALT CMMA  &mt RGUI DOT &mt RCTRL FSLH
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+          			                     &mt LSFT ENTER  &lt NAV BSPC     &lt NUM SPACE  &lt FNC TAB
+	// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 		>;
 		};
 
        		num_layer {
 		bindings = <
-		&kp TILDE &kp EXCL &kp PLUS  &kp DLLR &kp AT		&kp C_VOL_UP &kp NUM_4  &kp NUM_5 &kp NUM_6 &kp PIPE
-		&kp FSLH  &kp STAR &kp MINUS &kp EQUAL &kp HASH		&kp C_VOL_DN	&kp NUM_1  &kp NUM_2 &kp NUM_3  &kp NUM_0 
-		&kp GRAVE &kp LT  &kp GT     &kp BSLH	&kp PRCNT	&kp C_PP &kp NUM_7 &kp NUM_8 &kp NUM_9  &kp DOT 
-					    &trans  &kp DEL  					&trans &kp NUM_0 
+	// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+	       &kp TILDE     &kp EXCL     &kp PLUS      &kp DLLR       &kp AT	       &kp C_VOL_UP   &kp NUM_4     &kp NUM_5     &kp NUM_6     &kp PIPE
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	       &kp FSLH      &kp STAR     &kp MINUS     &kp EQUAL     &kp HASH	       &kp C_VOL_DN   &kp NUM_1     &kp NUM_2     &kp NUM_3     &kp NUM_0 
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	       &kp GRAVE      &kp LT       &kp GT       &kp BSLH      &kp PRCNT          &kp C_PP     &kp NUM_7     &kp NUM_8     &kp NUM_9     &kp DOT 
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+					                 &trans       &kp DEL            &trans       &kp NUM_0 
+	// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 		>;
 		};
 		
 		nav_layer {
 		bindings = <
-		&kp ESC  &kp PG_UP &kp UP  &kp PG_DN  &kp INS    			&kp RBKT  &pair_bkt &kp COLON &kp SEMI &kp PIPE 
-		&kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END 			&kp RPAR &pair_par  &kp UNDER  &kp SQT   &kp DQT
-		&kp LC(Z)  &kp LG(X) &kp LA(C) &kp PSCRN   &kp K_APP    		&kp RBRC &pair_brc &kp CARET &kp PIPE  &kp AMPS
-					  &trans &trans  				&trans  &trans 
+	// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+	       &kp ESC       &kp PG_UP     &kp UP       &kp PG_DN     &kp INS            &kp RBKT     &pair_bkt     &kp COLON     &kp SEMI      &kp PIPE 
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	       &kp HOME      &kp LEFT     &kp DOWN      &kp RIGHT     &kp END            &kp RPAR     &pair_par     &kp UNDER     &kp SQT       &kp DQT
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	       &kp LC(Z)     &kp LG(X)    &kp LA(C)     &kp K_APP     &kp PSCRN          &kp RBRC     &pair_brc     &kp CARET     &kp PIPE      &kp AMPS
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	                                                  &trans        &trans            &trans       &trans 
+	// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 		>;
 		};	
 		
 		func_layer {
 		bindings = <
-		&trans &trans   &trans   &trans  &trans  		&trans &kp F4 &kp F5  &kp F6 &kp F11
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV   &trans  &trans 	&trans &kp F1 &kp F2 &kp F3 &kp F10  
-		&trans &trans   &trans   &trans  &trans    				&trans &kp F7 &kp F8  &kp F9 &kp F12  
-					 &trans &trans  					&trans &trans 
+	// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+	        &trans        &trans        &trans        &trans        &trans            &trans       &kp F4        &kp F5        &kp F6       &kp F11
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	      &bt BT_CLR    &bt BT_NXT     &bt BT_PRV     &trans        &trans            &trans       &kp F1        &kp F2        &kp F3       &kp F10  
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	        &trans        &trans        &trans        &trans        &trans            &trans       &kp F7        &kp F8        &kp F9       &kp F12  
+	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+	                                                  &trans        &trans            &trans       &trans 
+	// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 		>;
 		};	
         
