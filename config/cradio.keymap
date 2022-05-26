@@ -61,6 +61,14 @@ TODOs/ideas:
             bindings = <&kp BSPC>, <&kp TAB>;
             mods = <MOD_LALT>;
         };
+	lt_bspc: layer_tap_backspace_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            bindings = <&mo>, <&bstab>;
+        };
 	f_up: f_up {
             compatible = "zmk,behavior-mod-morph";
             label = "F_UP";
@@ -142,7 +150,7 @@ TODOs/ideas:
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 	     &mt LCTRL Z    &mt LGUI X    &mt LALT C      &kp D        &kp V	           &kp K        &kp H     &mt RALT CMMA  &mt RGUI DOT &mt RCTRL FSLH
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          			                     &mt LSFT ENTER  &lt NAV BSPC     &lt NUM SPACE  &lt FNC TAB
+          			                     &mt LSFT ENTER &lt_bspc NAV 0     &lt NUM SPACE  &lt FNC TAB
 	// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 		>;
 		};
@@ -156,7 +164,7 @@ TODOs/ideas:
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 	     &mt LCTRL Z    &mt LGUI X    &mt LALT C      &kp V        &kp B	           &kp N        &kp M     &mt RALT CMMA  &mt RGUI DOT &mt RCTRL FSLH
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-          			                     &mt LSFT ENTER  &lt NAV BSPC     &lt NUM SPACE  &lt FNC TAB
+          			                     &mt LSFT ENTER &lt_bspc NAV 0    &lt NUM SPACE  &lt FNC TAB
 	// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 		>;
 		};
