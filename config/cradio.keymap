@@ -63,6 +63,13 @@ TODOs/ideas:
             bindings = <&kp BSPC>, <&kp TAB>;
             mods = <MOD_LALT>;
         };
+	f_up: f_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_UP";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp UP>;
+            mods = <(MOD_RCTRL|MOD_RSFT|MOD_RGUI>;
+        };
 	pair_bkt: pair_bkt {
             label = "pair_bkt";
             compatible = "zmk,behavior-macro";
