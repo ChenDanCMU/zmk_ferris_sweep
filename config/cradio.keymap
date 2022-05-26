@@ -132,7 +132,8 @@ TODOs/ideas:
         };
     combos {
         compatible = "zmk,combos";
-	
+	COMBO(close      , LC(W)       ,    1 2    , BASE QWE, 50)//WF
+	COMBO(select_all , LC(A)       ,    10 11  , BASE QWE, 50)//AR
 	COMBO(word_return, &word_return,    11 13  , BASE QWE, 50)//RT
 	COMBO(tog_qwerty , &tog QWE    ,    0 1 17 , BASE QWE, 50)//QWE
 	COMBO(tog_game   , &tog GME    ,  14 15 17 , BASE GME, 50)//GME
