@@ -55,6 +55,14 @@ TODOs/ideas:
             bindings
                 = <&kp LPAR &kp RPAR &kp LEFT>;
         };
+	// https://github.com/caksoylar/zmk-config/blob/main/config/3x5.keymap
+	bstab: backspace_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp TAB>;
+            mods = <MOD_LALT>;
+        };
 	pair_bkt: pair_bkt {
             label = "pair_bkt";
             compatible = "zmk,behavior-macro";
@@ -88,7 +96,7 @@ TODOs/ideas:
        		default_layer {
 		bindings = <
 	// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-	        &kp Q         &kp W         &kp F         &kp P        &kp B 		   &kp J        &kp L         &kp U         &kp Y       &kp SQT
+	        &kp Q         &kp W         &kp F         &kp P        &kp B 		   &kp J        &kp L         &kp U         &kp Y     &mt RC(RS) SQT
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 		&kp A         &kp R         &kp S         &kp T        &kp G 		   &kp M        &kp N         &kp E         &kp I        &kp O
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
