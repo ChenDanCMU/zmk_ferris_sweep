@@ -99,7 +99,10 @@ TODOs/ideas:
     combos {
         compatible = "zmk,combos";
 	
-	COMBO(word_return, &word_return,    11 13, BASE QWE, 50)
+	COMBO(word_return, &word_return,    11 13  , BASE QWE, 50)//RT
+	COMBO(tog_qwerty , &tog QWE    ,    0 1 17 , BASE QWE, 50)//QWE
+	COMBO(tog_game   , &tog GME    ,  14 15 17 , BASE GME, 50)//GME
+	
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -121,7 +124,7 @@ TODOs/ideas:
 		qwerty_layer {
 		bindings = <
 	// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-	        &kp Q         &kp W         &kp E         &kp R        &kp T 		   &kp Y        &kp U         &kp I         &kp O        &kp P
+	        &kp Q         &kp W         &kp E         &kp R        &kp T 		   &kp Y        &kp U         &kp I         &kp O     &mt RC(RSFT) P
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 		&kp A         &kp S         &kp D         &kp F        &kp G 		   &kp H        &kp J         &kp K         &kp L       &kp SEMI
 	// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
