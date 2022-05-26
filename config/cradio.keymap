@@ -5,8 +5,6 @@
  */
 /*
 TODOs/ideas:
-2. add a qwerty layer
-3. add a gaming layer
 4. add a maintainance layer (for reset, ble/usb, etc.)
 5. add a combo for returning to base layer
 6. add a media layer?
@@ -68,7 +66,28 @@ TODOs/ideas:
             label = "F_UP";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp UP>;
-            mods = <(MOD_RCTRL|MOD_RSFT|MOD_RGUI>;
+            mods = <(MOD_RCTRL|MOD_RSFT|MOD_RGUI)>;
+        };
+	r_left: r_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_LEFT";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LEFT>;
+            mods = <(MOD_RCTRL|MOD_RSFT|MOD_RGUI)>;
+        };
+	s_down: s_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_DOWN";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp DOWN>;
+            mods = <(MOD_RCTRL|MOD_RSFT|MOD_RGUI)>;
+        };
+	t_right: t_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_RIGHT";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp RIGHT>;
+            mods = <(MOD_RCTRL|MOD_RSFT|MOD_RGUI)>;
         };
 	pair_bkt: pair_bkt {
             label = "pair_bkt";
