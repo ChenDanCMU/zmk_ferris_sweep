@@ -5,13 +5,8 @@
  */
 /*
 TODOs/ideas:
-4. add a maintainance layer (for reset, ble/usb, etc.)
-5. add a combo for returning to base layer
 6. add a media layer?
 7. custom shift 
-8. alt+tab
-9. gui+num layer/nav layer on key, for tiling window manager navigation
-10. select-line macro
 */
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -152,6 +147,7 @@ TODOs/ideas:
 	COMBO(word_return, &word_return,    11 13  , BASE QWE, 50)//RT
 	COMBO(tog_qwerty , &tog QWE    ,    0 1 17 , BASE QWE, 50)//QWE
 	COMBO(tog_game   , &tog GME    ,  14 15 17 , BASE GME, 50)//GME
+	COMBO(tog_colemak, &to BASE    ,  6 19 22 , BASE GME, 50)//COL
 	
     };
         keymap {
